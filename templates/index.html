@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 URL Shortener</h1>
+        <p>Create short links with custom slugs and analytics.</p>
+
+        <div class="card">
+            <h2>Create Short URL</h2>
+            <input 
+                type="text"
+                id="url"
+                placeholder="Enter your long URL">
+
+            <input 
+                type="text" 
+                id="slug"
+                placeholder="Create slug (optional)">
+            
+            <button id="shortenBtn">Shorten URL</button>
+
+            <div id="result"></div>
+            <button id="copyBtn" style="display:none; margin-top:15px;">Copy Short URL</button>
+        </div>
+        <div class="card" style="margin: 25px; ">
+            <h2>URL Statistics</h2>
+
+            <input type="text" id="statsSlug" placeholder="Enter short sode">
+
+            <button id="statsBtn">View Statistics</button>
+            <div id="statsResult"></div>
+        </div>
+
+        <div class="card" style="margin-top: 25px;">
+
+            <h2>Update URL</h2>
+
+            <input
+                 type="text" id="updateSlug" placeholder="Short code">
+
+            <input type="text" id="newUrl" placeholder="New destination URL">
+
+            <button id="updateBtn">Update URL</button>
+
+            <div id="updateResult"></div>
+
+        </div>
+        <div class="card" style="margin-top: 25px;">
+
+            <h2>Delete URL</h2>
+
+            <input type="text" id="deleteSlug" placeholder="Short code">
+
+            <button id="deleteBtn">Delete URL</button>
+
+        <div id="deleteResult"></div>
+
+        </div>
+    </div>
+
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
